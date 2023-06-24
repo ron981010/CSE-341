@@ -1,0 +1,25 @@
+{ 
+    "contact": {
+        "firstName": "sarah",
+        "lastname": "Birch",
+        "email": "amazing@test.com",
+        "favoritecolor": "Blue",
+        "birthday": "10/10/98"
+    },
+    "contact1": {
+        "firstName": "Juan",
+        "lastname": "Rosado",
+        "email": "rosjun@test.com",
+        "favoritecolor": "red",
+        "birthday": "10/05/97"
+    },
+
+    "contact2": {
+        "firstName": "pedro",
+        "lastname": "Camacho",
+        "email": "camacho@test.com",
+        "favoritecolor": "Green",
+        "birthday": "25/04/05"
+    }
+
+}

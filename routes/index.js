@@ -1,7 +1,6 @@
-const routes = require('express').Router();
-const lesson1Controller = require('../controllers/lesson1');
- 
-routes.get('/', lesson1Controller.lucRoute);
-routes.get('/omar', lesson1Controller.omarRoute);
+const express = require('express');
+const router = express.Router();
 
-module.exports = routes;
+router.use('/contacts', require('./contacts'))
+
+module.exports = router;

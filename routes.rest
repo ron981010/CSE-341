@@ -1,19 +1,73 @@
 // LOCALHOST
-###
+### Get all contacts
 GET http://localhost:8080/contacts
-###
-GET http://localhost:8080/contacts/64978d9406610c3276e313a9
-###
+
+
+### Get contact by id
 GET http://localhost:8080/contacts/64978d9406610c3276e313aa
-###
-GET http://localhost:8080/contacts/64978d9406610c3276e313ab
+
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ashley",
+    "lastName":"Weaver",
+    "email":"aWeaver@test.com",
+    "favoriteColor":"Brown",
+    "birthday":"06/19/2000"
+}
+
+
+### PUT contact
+PUT http://localhost:8080/contacts/64978d9406610c3276e313a9 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Birch",
+    "email":"test@gmail.com",
+    "favoriteColor":"Green",
+    "birthday":"12/12/20"
+}
+### DELETE contact
+DELETE http://localhost:8080/contacts/6497fa70a51e24c184e915cd HTTP/1.1
 
 // PRODUCTION Deploy
-###
-GET https://ron981010-cse-341-l2.onrender.com/contacts
-###
-GET https://ron981010-cse-341-l2.onrender.com/contacts/64978d9406610c3276e313a9
-###
-GET https://ron981010-cse-341-l2.onrender.com/contacts/64978d9406610c3276e313aa
-###
-GET https://ron981010-cse-341-l2.onrender.com/contacts/64978d9406610c3276e313ab
+### Get all contacts
+GET https://cse341-instructor.herokuapp.com/contacts
+
+
+### Get contact by id
+GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
+
+
+### Create contact
+POST https://cse341-instructor.herokuapp.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Ashley",
+    "lastName":"Weaver",
+    "email":"aWeaver@test.com",
+    "favoriteColor":"Brown",
+    "birthday":"06/19/2000"
+}
+
+
+### PUT contact
+PUT https://cse341-instructor.herokuapp.com/contacts/64978d9406610c3276e313a9 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Sarah",
+    "lastName":"Birch",
+    "email":"sarahB@gmail.com",
+    "favoriteColor":"Yellow",
+    "birthday":"06/12/20"
+}
+
+
+### DELETE contact
+DELETE https://cse341-instructor.herokuapp.com/contacts/6220e34083149913680f9a64 HTTP/1.1
